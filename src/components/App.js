@@ -25,11 +25,11 @@ class App extends Component {
             <Route
               exact
               path='/'
-              render={({match, history, location}) =>
-                <List 
-                  match={match} 
-                  location={location} 
-                  history={history}  
+              render={({ match, history, location }) =>
+                <List
+                  match={match}
+                  location={location}
+                  history={history}
                   pokemons={pokemons}
                 />
               }
@@ -37,8 +37,8 @@ class App extends Component {
             <Route
               path='/:id'
               render={(props) =>
-                <Detail {...props} 
-                  pokemon={this.getPokemon(props.match.params.id)} 
+                <Detail {...props}
+                  pokemon={this.getPokemon(props.match.params.id)}
                 />
               }
             />
