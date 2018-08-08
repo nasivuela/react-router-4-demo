@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-class Detail extends Component {
+class List extends Component {
 
   render() {
     console.log(this.props);
@@ -24,4 +24,4 @@ class Detail extends Component {
   }
 }
 
-export default Detail;
+export default List;
