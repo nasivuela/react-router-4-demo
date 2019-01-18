@@ -25,15 +25,16 @@ class App extends Component {
             <Route
               exact
               path='/'
-              render={({ match, history, location }) =>
+              render={props =>
                 <List
-                  match={match}
-                  location={location}
-                  history={history}
+                  match={props.match}
+                  location={props.location}
+                  history={props.history}
                   pokemons={pokemons}
                 />
               }
             />
+
             <Route
               path='/:id'
               render={(props) =>
