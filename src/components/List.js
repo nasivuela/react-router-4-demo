@@ -3,8 +3,6 @@ import { Link } from 'react-router-dom';
 
 class List extends Component {
   render() {
-    console.log('LIST');
-    console.log(this.props);
     return (
       <div>
         <h1>Listado</h1>

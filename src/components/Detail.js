@@ -3,8 +3,6 @@ import { Link } from 'react-router-dom';
 
 class Detail extends Component {
   render() {
-    console.log('DETAILS');
-    console.log(this.props);
     return (
       <div>
         <Link to="/">Back</Link>
