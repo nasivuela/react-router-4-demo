@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 class Detail extends Component {
   render() {
@@ -9,7 +9,7 @@ class Detail extends Component {
       <div>
         <Link to="/">Back</Link>
         <h1>Detail of {this.props.pokemon.name}</h1>
-        <img src={this.props.pokemon.url} alt={this.props.pokemon.name}/>
+        <img src={this.props.pokemon.url} alt={this.props.pokemon.name} />
       </div>
     );
   }

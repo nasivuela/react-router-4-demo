@@ -24,24 +24,25 @@ class App extends Component {
           <Switch>
             <Route
               exact
-              path='/'
-              render={props =>
+              path="/"
+              render={props => (
                 <List
                   match={props.match}
                   location={props.location}
                   history={props.history}
                   pokemons={pokemons}
                 />
-              }
+              )}
             />
 
             <Route
-              path='/:id'
-              render={(props) =>
-                <Detail {...props}
+              path="/pokemon-detail/:id"
+              render={props => (
+                <Detail
+                  {...props}
                   pokemon={this.getPokemon(props.match.params.id)}
                 />
-              }
+              )}
             />
           </Switch>
         </main>
